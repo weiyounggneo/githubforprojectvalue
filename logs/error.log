@@ -1,0 +1,588 @@
+[2026-07-23 15:23:57] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1784791436944_8aac2cku","method":"POST","path":"/api/project-values/import","sqlPreview":"INSERT INTO t_project_values ( project_code, week_end, capacity_improvement, people_productivity, quality_improvement, yield_savings ) VALUES (?, ?, ?, ?, ?, ?)","paramCount":6,"phase":"error","durationMs":40,"errorMessage":"Incorrect date value: '2026-02-31' for column `projvalue`.`t_project_values`.`week_end` at row 1","errorName":"Error","code":"ER_TRUNCATED_WRONG_VALUE"}
+Error: Incorrect date value: '2026-02-31' for column `projvalue`.`t_project_values`.`week_end` at row 1
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-07-23 15:23:57] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1784791436944_8aac2cku","method":"POST","path":"/api/project-values/import","sqlPreview":"INSERT INTO t_project_values ( project_code, week_end, capacity_improvement, people_productivity, quality_improvement, yield_savings ) VALUES (?, ?, ?, ?, ?, ?)","paramCount":6,"phase":"error","durationMs":42,"errorMessage":"Incorrect date value: '2028-04-31' for column `projvalue`.`t_project_values`.`week_end` at row 1","errorName":"Error","code":"ER_TRUNCATED_WRONG_VALUE"}
+Error: Incorrect date value: '2028-04-31' for column `projvalue`.`t_project_values`.`week_end` at row 1
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-07-23 15:38:02] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1784792282427_ywivk7wb","method":"POST","path":"/api/project-values/import","sqlPreview":"INSERT INTO t_project_values ( project_code, week_end, capacity_improvement, people_productivity, quality_improvement, yield_savings ) VALUES (?, ?, ?, ?, ?, ?)","paramCount":6,"phase":"error","durationMs":47,"errorMessage":"Incorrect date value: '2026-02-31' for column `projvalue`.`t_project_values`.`week_end` at row 1","errorName":"Error","code":"ER_TRUNCATED_WRONG_VALUE"}
+Error: Incorrect date value: '2026-02-31' for column `projvalue`.`t_project_values`.`week_end` at row 1
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-07-23 15:38:03] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1784792282427_ywivk7wb","method":"POST","path":"/api/project-values/import","sqlPreview":"INSERT INTO t_project_values ( project_code, week_end, capacity_improvement, people_productivity, quality_improvement, yield_savings ) VALUES (?, ?, ?, ?, ?, ?)","paramCount":6,"phase":"error","durationMs":91,"errorMessage":"Incorrect date value: '2028-04-31' for column `projvalue`.`t_project_values`.`week_end` at row 1","errorName":"Error","code":"ER_TRUNCATED_WRONG_VALUE"}
+Error: Incorrect date value: '2028-04-31' for column `projvalue`.`t_project_values`.`week_end` at row 1
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-07-24 13:45:50] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1784871928333_rzvnbxiu","method":"GET","path":"/api/project-values","sqlPreview":"SELECT v.metric_id, v.project_code, m.project_name, m.project_type, m.project_description, m.use_case_investment, DATE_FORMAT(v.week_end, '%Y-%m-%d') AS week_end, v.capacity_improvement, v.people_prod","paramCount":0,"phase":"error","durationMs":22177,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-07-24 13:45:50] ERROR: ERROR GET /api/project-values | {"service":"backend","traceId":"trace_1784871928333_rzvnbxiu","method":"GET","path":"/api/project-values","phase":"error","durationMs":22179,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-07-24 13:45:51] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1784871928329_ktnnyu5j","method":"GET","path":"/api/project-master/options","sqlPreview":"SELECT project_code, project_name, project_description, project_type, use_case_investment FROM t_project_master ORDER BY project_name ASC","paramCount":0,"phase":"error","durationMs":23391,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-07-24 13:45:51] ERROR: ERROR GET /api/project-master/options | {"service":"backend","traceId":"trace_1784871928329_ktnnyu5j","method":"GET","path":"/api/project-master/options","phase":"error","durationMs":23391,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-07-29 17:58:07] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1785319066197_f4v6n8ma","method":"GET","path":"/api/project-master","sqlPreview":"SELECT project_code, project_name, project_description, project_type, use_case_investment, project_status FROM t_project_master ORDER BY project_name ASC","paramCount":0,"phase":"error","durationMs":21649,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-07-29 17:58:07] ERROR: ERROR GET /api/project-master | {"service":"backend","traceId":"trace_1785319066197_f4v6n8ma","method":"GET","path":"/api/project-master","phase":"error","durationMs":21652,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-07-29 17:58:07] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1785319066219_tqwfkhas","method":"GET","path":"/api/project-statuses","sqlPreview":"SELECT status_name FROM t_project_statuses ORDER BY status_name ASC","paramCount":0,"phase":"error","durationMs":21656,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-07-29 17:58:07] ERROR: ERROR GET /api/project-statuses | {"service":"backend","traceId":"trace_1785319066219_tqwfkhas","method":"GET","path":"/api/project-statuses","phase":"error","durationMs":21659,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-07-29 17:58:07] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1785319066210_qc5vintv","method":"GET","path":"/api/project-types","sqlPreview":"SELECT type_name FROM t_project_types ORDER BY type_name ASC","paramCount":0,"phase":"error","durationMs":21669,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-07-29 17:58:07] ERROR: ERROR GET /api/project-types | {"service":"backend","traceId":"trace_1785319066210_qc5vintv","method":"GET","path":"/api/project-types","phase":"error","durationMs":21672,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-07-31 16:12:47] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1785485566757_yzhocvx6","method":"PUT","path":"/api/manager-yearly/PRJ-001","sqlPreview":"UPDATE t_manager_project_master SET project_name = ?, comments = ?, capacity_gain_value = ?, capacity_gain_percent = ?, dl_value = ?, dl_equivalent = ?, idl_value = ?, idl_fte = ?, yield_value = ?, yi","paramCount":13,"phase":"error","durationMs":495,"errorMessage":"Unknown column 'comments' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'comments' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-07-31 16:12:47] ERROR: ERROR PUT /api/manager-yearly/:projectId | {"service":"backend","traceId":"trace_1785485566757_yzhocvx6","method":"PUT","path":"/api/manager-yearly/PRJ-001","projectId":"PRJ-001","phase":"error","durationMs":573,"errorMessage":"Unknown column 'comments' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'comments' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-03 13:31:30] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1785735069329_67x1szds","method":"PUT","path":"/api/manager-yearly/PRJ-021","sqlPreview":"SELECT p.project_name, m.capacity_gain_value, m.capacity_gain_pct, m.dl_value, m.dl_equivalent, m.idl_value, m.idl_fte, m.yield_value, m.yield_gain_pct, m.quality_value, m.quality_cases, c.comment_tex","paramCount":2,"phase":"error","durationMs":21662,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-03 13:31:30] ERROR: ERROR PUT /api/manager-yearly/:projectId | {"service":"backend","traceId":"trace_1785735069329_67x1szds","method":"PUT","path":"/api/manager-yearly/PRJ-021","projectId":"PRJ-021","phase":"error","durationMs":21663,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-04 11:51:06] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1785815447286_psyspgjf","method":"GET","path":"/api/project-values","sqlPreview":"SELECT v.metric_id, v.project_code, m.project_name, m.project_type, m.project_description, m.project_status, m.use_case_investment, DATE_FORMAT(v.week_end, '%Y-%m-%d') AS week_end, v.capacity_improvem","paramCount":0,"phase":"error","durationMs":19233,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-04 11:51:06] ERROR: ERROR GET /api/project-values | {"service":"backend","traceId":"trace_1785815447286_psyspgjf","method":"GET","path":"/api/project-values","phase":"error","durationMs":19235,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-04 11:51:06] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1785815447282_v4i4rhal","method":"GET","path":"/api/project-master/options","sqlPreview":"SELECT project_code, project_name, project_description, project_type, use_case_investment, project_status FROM t_project_master ORDER BY project_name ASC","paramCount":0,"phase":"error","durationMs":19266,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-04 11:51:06] ERROR: ERROR GET /api/project-master/options | {"service":"backend","traceId":"trace_1785815447282_v4i4rhal","method":"GET","path":"/api/project-master/options","phase":"error","durationMs":19267,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-11 11:16:07] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1786418145877_039orvea","method":"GET","path":"/api/project-values","sqlPreview":"SELECT v.metric_id, v.project_code, m.project_name, m.project_type, m.project_description, m.project_status, m.use_case_investment, DATE_FORMAT(v.week_end, '%Y-%m-%d') AS week_end, v.capacity_improvem","paramCount":0,"phase":"error","durationMs":21655,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-11 11:16:07] ERROR: ERROR GET /api/project-values | {"service":"backend","traceId":"trace_1786418145877_039orvea","method":"GET","path":"/api/project-values","phase":"error","durationMs":21661,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-11 11:26:57] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1786418798482_1e82mumf","method":"GET","path":"/api/project-values","sqlPreview":"SELECT v.metric_id, v.project_code, m.project_name, m.project_type, m.project_description, m.project_status, m.use_case_investment, DATE_FORMAT(v.week_end, '%Y-%m-%d') AS week_end, v.capacity_improvem","paramCount":0,"phase":"error","durationMs":19246,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-11 11:26:57] ERROR: ERROR GET /api/project-values | {"service":"backend","traceId":"trace_1786418798482_1e82mumf","method":"GET","path":"/api/project-values","phase":"error","durationMs":19248,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-11 16:34:12] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786437233710_n4uc77xe","method":"GET","path":"/api/manager-site-targets","sqlPreview":"SELECT * FROM t_manager_site_targets","paramCount":0,"phase":"error","durationMs":19224,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-11 16:34:12] ERROR: ERROR GET /api/manager-site-targets | {"service":"backend","traceId":"trace_1786437233710_n4uc77xe","method":"GET","path":"/api/manager-site-targets","phase":"error","durationMs":19226,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-12 10:30:32] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786501832004_k6ti4tke","method":"PUT","path":"/api/manager-yearly/PRJ-029","sqlPreview":"UPDATE t_manager_project_master SET project_name = ?, project_status = ?, pillar = ?, site = ?, current_pmo_gate = ?, dtit_involved = ?, ai_type = ?, foak_noak = ?, target_g1_date = ?, target_g2_date ","paramCount":13,"phase":"error","durationMs":36,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 10:30:32] ERROR: ERROR PUT /api/manager-yearly/:projectId | {"service":"backend","traceId":"trace_1786501832004_k6ti4tke","method":"PUT","path":"/api/manager-yearly/PRJ-029","projectId":"PRJ-029","phase":"error","durationMs":120,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 10:31:23] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786501882945_33dclna3","method":"PUT","path":"/api/manager-yearly/PRJ-029","sqlPreview":"UPDATE t_manager_project_master SET project_name = ?, project_status = ?, pillar = ?, site = ?, current_pmo_gate = ?, dtit_involved = ?, ai_type = ?, foak_noak = ?, target_g1_date = ?, target_g2_date ","paramCount":13,"phase":"error","durationMs":110,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 10:31:23] ERROR: ERROR PUT /api/manager-yearly/:projectId | {"service":"backend","traceId":"trace_1786501882945_33dclna3","method":"PUT","path":"/api/manager-yearly/PRJ-029","projectId":"PRJ-029","phase":"error","durationMs":348,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 10:35:45] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786502145405_65po8cl5","method":"PUT","path":"/api/manager-yearly/PRJ-029","sqlPreview":"UPDATE t_manager_project_master SET project_name = ?, project_status = ?, pillar = ?, site = ?, current_pmo_gate = ?, dtit_involved = ?, ai_type = ?, foak_noak = ?, target_g1_date = ?, target_g2_date ","paramCount":13,"phase":"error","durationMs":29,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 10:35:45] ERROR: ERROR PUT /api/manager-yearly/:projectId | {"service":"backend","traceId":"trace_1786502145405_65po8cl5","method":"PUT","path":"/api/manager-yearly/PRJ-029","projectId":"PRJ-029","phase":"error","durationMs":98,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 10:37:12] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786502231659_7lpfiysb","method":"PUT","path":"/api/manager-yearly/PRJ-029","sqlPreview":"UPDATE t_manager_project_master SET project_name = ?, project_status = ?, pillar = ?, site = ?, current_pmo_gate = ?, dtit_involved = ?, ai_type = ?, foak_noak = ?, target_g1_date = ?, target_g2_date ","paramCount":13,"phase":"error","durationMs":44,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 10:37:12] ERROR: ERROR PUT /api/manager-yearly/:projectId | {"service":"backend","traceId":"trace_1786502231659_7lpfiysb","method":"PUT","path":"/api/manager-yearly/PRJ-029","projectId":"PRJ-029","phase":"error","durationMs":337,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 10:41:22] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786502482381_tjpb00rq","method":"PUT","path":"/api/manager-yearly/PRJ-029","sqlPreview":"UPDATE t_manager_project_master SET project_name = ?, project_status = ?, pillar = ?, site = ?, current_pmo_gate = ?, dtit_involved = ?, ai_type = ?, foak_noak = ?, target_g1_date = ?, target_g2_date ","paramCount":13,"phase":"error","durationMs":44,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 10:41:22] ERROR: ERROR PUT /api/manager-yearly/:projectId | {"service":"backend","traceId":"trace_1786502482381_tjpb00rq","method":"PUT","path":"/api/manager-yearly/PRJ-029","projectId":"PRJ-029","phase":"error","durationMs":141,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 10:50:23] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786503022912_yva2i5h8","method":"PUT","path":"/api/manager-yearly/PRJ-029","sqlPreview":"UPDATE t_manager_project_master SET project_name = ?, project_status = ?, pillar = ?, site = ?, current_pmo_gate = ?, dtit_involved = ?, ai_type = ?, foak_noak = ?, target_g1_date = ?, target_g2_date ","paramCount":13,"phase":"error","durationMs":40,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 10:50:23] ERROR: ERROR PUT /api/manager-yearly/:projectId | {"service":"backend","traceId":"trace_1786503022912_yva2i5h8","method":"PUT","path":"/api/manager-yearly/PRJ-029","projectId":"PRJ-029","phase":"error","durationMs":138,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 10:50:35] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786503035493_l8w1de0j","method":"PUT","path":"/api/manager-yearly/PRJ-029","sqlPreview":"UPDATE t_manager_project_master SET project_name = ?, project_status = ?, pillar = ?, site = ?, current_pmo_gate = ?, dtit_involved = ?, ai_type = ?, foak_noak = ?, target_g1_date = ?, target_g2_date ","paramCount":13,"phase":"error","durationMs":41,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 10:50:35] ERROR: ERROR PUT /api/manager-yearly/:projectId | {"service":"backend","traceId":"trace_1786503035493_l8w1de0j","method":"PUT","path":"/api/manager-yearly/PRJ-029","projectId":"PRJ-029","phase":"error","durationMs":136,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 10:51:54] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786503114681_bkfy5zc2","method":"PUT","path":"/api/manager-yearly/PRJ-014","sqlPreview":"UPDATE t_manager_project_master SET project_name = ?, project_status = ?, pillar = ?, site = ?, current_pmo_gate = ?, dtit_involved = ?, ai_type = ?, foak_noak = ?, target_g1_date = ?, target_g2_date ","paramCount":13,"phase":"error","durationMs":41,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 10:51:54] ERROR: ERROR PUT /api/manager-yearly/:projectId | {"service":"backend","traceId":"trace_1786503114681_bkfy5zc2","method":"PUT","path":"/api/manager-yearly/PRJ-014","projectId":"PRJ-014","phase":"error","durationMs":136,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 11:01:38] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786503697843_7y9ckptl","method":"PUT","path":"/api/manager-yearly/PRJ-036","sqlPreview":"UPDATE t_manager_project_master SET project_name = ?, project_status = ?, pillar = ?, site = ?, current_pmo_gate = ?, dtit_involved = ?, ai_type = ?, foak_noak = ?, target_g1_date = ?, target_g2_date ","paramCount":13,"phase":"error","durationMs":47,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 11:01:38] ERROR: ERROR PUT /api/manager-yearly/:projectId | {"service":"backend","traceId":"trace_1786503697843_7y9ckptl","method":"PUT","path":"/api/manager-yearly/PRJ-036","projectId":"PRJ-036","phase":"error","durationMs":157,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 11:02:08] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786503728196_lr7xjtzo","method":"PUT","path":"/api/manager-yearly/PRJ-042","sqlPreview":"UPDATE t_manager_project_master SET project_name = ?, project_status = ?, pillar = ?, site = ?, current_pmo_gate = ?, dtit_involved = ?, ai_type = ?, foak_noak = ?, target_g1_date = ?, target_g2_date ","paramCount":13,"phase":"error","durationMs":40,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 11:02:08] ERROR: ERROR PUT /api/manager-yearly/:projectId | {"service":"backend","traceId":"trace_1786503728196_lr7xjtzo","method":"PUT","path":"/api/manager-yearly/PRJ-042","projectId":"PRJ-042","phase":"error","durationMs":133,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 11:06:56] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786504016633_rja3zsne","method":"PUT","path":"/api/manager-yearly/PRJ-042","sqlPreview":"UPDATE t_manager_project_master SET project_name = ?, project_status = ?, pillar = ?, site = ?, current_pmo_gate = ?, dtit_involved = ?, ai_type = ?, foak_noak = ?, target_g1_date = ?, target_g2_date ","paramCount":13,"phase":"error","durationMs":40,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 11:06:56] ERROR: ERROR PUT /api/manager-yearly/:projectId | {"service":"backend","traceId":"trace_1786504016633_rja3zsne","method":"PUT","path":"/api/manager-yearly/PRJ-042","projectId":"PRJ-042","phase":"error","durationMs":133,"errorMessage":"Unknown column 'target_g1_date' in 'field list'","errorName":"Error","code":"ER_BAD_FIELD_ERROR"}
+Error: Unknown column 'target_g1_date' in 'field list'
+    at Packet.asError (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packets\packet.js:740:17)
+    at Query.execute (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\commands\command.js:29:26)
+    at PoolConnection.handlePacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:475:34)
+    at PacketParser.onPacket (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:93:12)
+    at PacketParser.executeStart (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\packet_parser.js:75:16)
+    at Socket.<anonymous> (C:\Users\youngneo\OneDrive - STMicroelectronics\Desktop\project_VALUE\node_modules\mysql2\lib\base\connection.js:100:25)
+    at Socket.emit (node:events:518:28)
+    at addChunk (node:internal/streams/readable:561:12)
+    at readableAddChunkPushByteMode (node:internal/streams/readable:512:3)
+    at Readable.push (node:internal/streams/readable:392:5)
+[2026-08-12 16:47:54] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786524455668_4a5m4w9k","method":"GET","path":"/api/manager-yearly/pipeline-velocity","sqlPreview":"SELECT DATE_FORMAT(start_date, '%Y-%m') AS month_key, DATE_FORMAT(start_date, '%b %Y') AS month_label, SUM(CASE WHEN phase_name = 'G1' THEN 1 ELSE 0 END) AS g1_count, SUM(CASE WHEN phase_name = 'G2' T","paramCount":0,"phase":"error","durationMs":19211,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-12 16:47:54] ERROR: ERROR GET /api/manager-yearly/pipeline-velocity | {"service":"backend","traceId":"trace_1786524455668_4a5m4w9k","method":"GET","path":"/api/manager-yearly/pipeline-velocity","phase":"error","durationMs":19212,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-12 16:47:54] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786524455668_h440306z","method":"GET","path":"/api/manager-site-targets","sqlPreview":"SELECT * FROM t_manager_site_targets","paramCount":0,"phase":"error","durationMs":19211,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-12 16:47:54] ERROR: ERROR GET /api/manager-site-targets | {"service":"backend","traceId":"trace_1786524455668_h440306z","method":"GET","path":"/api/manager-site-targets","phase":"error","durationMs":19212,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-12 16:47:54] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786524455664_eag1kooa","method":"GET","path":"/api/manager-yearly","sqlPreview":"SELECT * FROM t_manager_project_master ORDER BY project_name ASC","paramCount":0,"phase":"error","durationMs":19228,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-12 16:47:54] ERROR: ERROR GET /api/manager-yearly | {"service":"backend","traceId":"trace_1786524455664_eag1kooa","method":"GET","path":"/api/manager-yearly","phase":"error","durationMs":19229,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-14 11:35:06] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786678484429_ffjyrh5z","method":"GET","path":"/api/manager-yearly","sqlPreview":"SELECT * FROM t_manager_project_master ORDER BY project_name ASC","paramCount":0,"phase":"error","durationMs":21627,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-14 11:35:06] ERROR: ERROR GET /api/manager-yearly | {"service":"backend","traceId":"trace_1786678484429_ffjyrh5z","method":"GET","path":"/api/manager-yearly","phase":"error","durationMs":21629,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-14 11:35:06] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786678484433_x62hkhnv","method":"GET","path":"/api/manager-site-targets","sqlPreview":"SELECT * FROM t_manager_site_targets","paramCount":0,"phase":"error","durationMs":21630,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-14 11:35:06] ERROR: ERROR GET /api/manager-site-targets | {"service":"backend","traceId":"trace_1786678484433_x62hkhnv","method":"GET","path":"/api/manager-site-targets","phase":"error","durationMs":21630,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-14 11:35:06] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786678484434_gz3t9pvi","method":"GET","path":"/api/manager-yearly/pipeline-velocity","sqlPreview":"SELECT DATE_FORMAT(start_date, '%Y-%m') AS month_key, DATE_FORMAT(start_date, '%b %Y') AS month_label, SUM(CASE WHEN phase_name = 'G1' THEN 1 ELSE 0 END) AS g1_count, SUM(CASE WHEN phase_name = 'G2' T","paramCount":0,"phase":"error","durationMs":21632,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-14 11:35:06] ERROR: ERROR GET /api/manager-yearly/pipeline-velocity | {"service":"backend","traceId":"trace_1786678484434_gz3t9pvi","method":"GET","path":"/api/manager-yearly/pipeline-velocity","phase":"error","durationMs":21633,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-14 17:08:27] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786698488183_qfmikdp6","method":"GET","path":"/api/manager-yearly/pipeline-velocity","sqlPreview":"SELECT DATE_FORMAT(start_date, '%Y-%m') AS month_key, DATE_FORMAT(start_date, '%b %Y') AS month_label, SUM(CASE WHEN phase_name = 'G1' THEN 1 ELSE 0 END) AS g1_count, SUM(CASE WHEN phase_name = 'G2' T","paramCount":0,"phase":"error","durationMs":19196,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-14 17:08:27] ERROR: ERROR GET /api/manager-yearly/pipeline-velocity | {"service":"backend","traceId":"trace_1786698488183_qfmikdp6","method":"GET","path":"/api/manager-yearly/pipeline-velocity","phase":"error","durationMs":19200,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-14 17:08:27] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786698488156_4ujem1wc","method":"GET","path":"/api/manager-yearly","sqlPreview":"SELECT * FROM t_manager_project_master ORDER BY project_name ASC","paramCount":0,"phase":"error","durationMs":19224,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-14 17:08:27] ERROR: ERROR GET /api/manager-yearly | {"service":"backend","traceId":"trace_1786698488156_4ujem1wc","method":"GET","path":"/api/manager-yearly","phase":"error","durationMs":19226,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-14 17:08:27] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786698488180_537pxthf","method":"GET","path":"/api/manager-site-targets","sqlPreview":"SELECT * FROM t_manager_site_targets","paramCount":0,"phase":"error","durationMs":19213,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-14 17:08:27] ERROR: ERROR GET /api/manager-site-targets | {"service":"backend","traceId":"trace_1786698488180_537pxthf","method":"GET","path":"/api/manager-site-targets","phase":"error","durationMs":19215,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-17 11:21:42] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1786936881228_mmlwbyl1","method":"GET","path":"/api/project-master/options","sqlPreview":"SELECT project_code, project_name, project_description, project_type, use_case_investment, project_status FROM t_project_master ORDER BY project_name ASC","paramCount":0,"phase":"error","durationMs":21616,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-17 11:21:42] ERROR: ERROR GET /api/project-master/options | {"service":"backend","traceId":"trace_1786936881228_mmlwbyl1","method":"GET","path":"/api/project-master/options","phase":"error","durationMs":21617,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-17 11:21:42] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1786936881230_t8o3rloj","method":"GET","path":"/api/project-values","sqlPreview":"SELECT v.metric_id, v.project_code, m.project_name, m.project_type, m.project_description, m.project_status, m.use_case_investment, DATE_FORMAT(v.month_end, '%Y-%m-%d') AS month_end, v.capacity_improv","paramCount":0,"phase":"error","durationMs":21617,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-17 11:21:42] ERROR: ERROR GET /api/project-values | {"service":"backend","traceId":"trace_1786936881230_t8o3rloj","method":"GET","path":"/api/project-values","phase":"error","durationMs":21618,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-17 11:28:10] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786937271340_c7fyhw95","method":"GET","path":"/api/manager-site-targets","sqlPreview":"SELECT * FROM t_manager_site_targets","paramCount":0,"phase":"error","durationMs":19213,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-17 11:28:10] ERROR: ERROR GET /api/manager-site-targets | {"service":"backend","traceId":"trace_1786937271340_c7fyhw95","method":"GET","path":"/api/manager-site-targets","phase":"error","durationMs":19214,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-17 11:28:10] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786937271337_h1ehvhaq","method":"GET","path":"/api/manager-yearly","sqlPreview":"SELECT * FROM t_manager_project_master ORDER BY project_name ASC","paramCount":0,"phase":"error","durationMs":19218,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-17 11:28:10] ERROR: ERROR GET /api/manager-yearly | {"service":"backend","traceId":"trace_1786937271337_h1ehvhaq","method":"GET","path":"/api/manager-yearly","phase":"error","durationMs":19220,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-17 11:28:10] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786937271343_oqfgnzbb","method":"GET","path":"/api/manager-yearly/pipeline-velocity","sqlPreview":"SELECT DATE_FORMAT(start_date, '%Y-%m') AS month_key, DATE_FORMAT(start_date, '%b %Y') AS month_label, SUM(CASE WHEN phase_name = 'G1' THEN 1 ELSE 0 END) AS g1_count, SUM(CASE WHEN phase_name = 'G2' T","paramCount":0,"phase":"error","durationMs":19224,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-17 11:28:10] ERROR: ERROR GET /api/manager-yearly/pipeline-velocity | {"service":"backend","traceId":"trace_1786937271343_oqfgnzbb","method":"GET","path":"/api/manager-yearly/pipeline-velocity","phase":"error","durationMs":19226,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-17 16:08:54] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786954129166_b7dscpav","method":"GET","path":"/api/manager-yearly","sqlPreview":"SELECT * FROM t_manager_project_master ORDER BY project_name ASC","paramCount":0,"phase":"error","durationMs":5763,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:54] ERROR: ERROR GET /api/manager-yearly | {"service":"backend","traceId":"trace_1786954129166_b7dscpav","method":"GET","path":"/api/manager-yearly","phase":"error","durationMs":5773,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:54] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786954129171_30uu0nho","method":"GET","path":"/api/manager-yearly/pipeline-velocity","sqlPreview":"SELECT DATE_FORMAT(start_date, '%Y-%m') AS month_key, DATE_FORMAT(start_date, '%b %Y') AS month_label, SUM(CASE WHEN phase_name = 'G1' THEN 1 ELSE 0 END) AS g1_count, SUM(CASE WHEN phase_name = 'G2' T","paramCount":0,"phase":"error","durationMs":5766,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:54] ERROR: ERROR GET /api/manager-yearly/pipeline-velocity | {"service":"backend","traceId":"trace_1786954129171_30uu0nho","method":"GET","path":"/api/manager-yearly/pipeline-velocity","phase":"error","durationMs":5767,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:54] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786954129170_59m4k7ft","method":"GET","path":"/api/manager-site-targets","sqlPreview":"SELECT * FROM t_manager_site_targets","paramCount":0,"phase":"error","durationMs":5776,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:54] ERROR: ERROR GET /api/manager-site-targets | {"service":"backend","traceId":"trace_1786954129170_59m4k7ft","method":"GET","path":"/api/manager-site-targets","phase":"error","durationMs":5777,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:55] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786954135103_yrch5pb1","method":"GET","path":"/api/manager-yearly","sqlPreview":"SELECT * FROM t_manager_project_master ORDER BY project_name ASC","paramCount":0,"phase":"error","durationMs":5,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:55] ERROR: ERROR GET /api/manager-yearly | {"service":"backend","traceId":"trace_1786954135103_yrch5pb1","method":"GET","path":"/api/manager-yearly","phase":"error","durationMs":5,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:55] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786954135107_4uxyj8kp","method":"GET","path":"/api/manager-site-targets","sqlPreview":"SELECT * FROM t_manager_site_targets","paramCount":0,"phase":"error","durationMs":5,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:55] ERROR: ERROR GET /api/manager-site-targets | {"service":"backend","traceId":"trace_1786954135107_4uxyj8kp","method":"GET","path":"/api/manager-site-targets","phase":"error","durationMs":6,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:55] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786954135114_wx8djday","method":"GET","path":"/api/manager-yearly/pipeline-velocity","sqlPreview":"SELECT DATE_FORMAT(start_date, '%Y-%m') AS month_key, DATE_FORMAT(start_date, '%b %Y') AS month_label, SUM(CASE WHEN phase_name = 'G1' THEN 1 ELSE 0 END) AS g1_count, SUM(CASE WHEN phase_name = 'G2' T","paramCount":0,"phase":"error","durationMs":4,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:55] ERROR: ERROR GET /api/manager-yearly/pipeline-velocity | {"service":"backend","traceId":"trace_1786954135114_wx8djday","method":"GET","path":"/api/manager-yearly/pipeline-velocity","phase":"error","durationMs":5,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:59] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786954139556_hwj6sjpb","method":"GET","path":"/api/manager-yearly","sqlPreview":"SELECT * FROM t_manager_project_master ORDER BY project_name ASC","paramCount":0,"phase":"error","durationMs":2,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:59] ERROR: ERROR GET /api/manager-yearly | {"service":"backend","traceId":"trace_1786954139556_hwj6sjpb","method":"GET","path":"/api/manager-yearly","phase":"error","durationMs":2,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:59] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786954139571_5ua3omwd","method":"GET","path":"/api/manager-site-targets","sqlPreview":"SELECT * FROM t_manager_site_targets","paramCount":0,"phase":"error","durationMs":2,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:59] ERROR: ERROR GET /api/manager-site-targets | {"service":"backend","traceId":"trace_1786954139571_5ua3omwd","method":"GET","path":"/api/manager-site-targets","phase":"error","durationMs":3,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:59] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1786954139579_dsd0k2ma","method":"GET","path":"/api/manager-yearly/pipeline-velocity","sqlPreview":"SELECT DATE_FORMAT(start_date, '%Y-%m') AS month_key, DATE_FORMAT(start_date, '%b %Y') AS month_label, SUM(CASE WHEN phase_name = 'G1' THEN 1 ELSE 0 END) AS g1_count, SUM(CASE WHEN phase_name = 'G2' T","paramCount":0,"phase":"error","durationMs":3,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-17 16:08:59] ERROR: ERROR GET /api/manager-yearly/pipeline-velocity | {"service":"backend","traceId":"trace_1786954139579_dsd0k2ma","method":"GET","path":"/api/manager-yearly/pipeline-velocity","phase":"error","durationMs":3,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-20 13:41:57] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1787204495757_t7ad23vi","method":"GET","path":"/api/project-values/history/all","sqlPreview":"SELECT history_id, metric_id, project_code, DATE_FORMAT(month_end, '%Y-%m-%d') AS month_end, capacity_improvement, yield_savings, people_productivity, quality_improvement, changed_by, DATE_FORMAT(chan","paramCount":0,"phase":"error","durationMs":21649,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-20 13:41:57] ERROR: ERROR GET /api/project-values/history/all | {"service":"backend","traceId":"trace_1787204495757_t7ad23vi","method":"GET","path":"/api/project-values/history/all","phase":"error","durationMs":21650,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-20 13:42:12] ERROR: ERROR queryPromise | {"service":"backend","traceId":"trace_1787204512996_xv9vzxn0","method":"GET","path":"/api/project-master/options","sqlPreview":"SELECT project_code, project_name, project_description, project_type, use_case_investment, project_status FROM t_project_master ORDER BY project_name ASC","paramCount":0,"phase":"error","durationMs":19216,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-20 13:42:12] ERROR: ERROR GET /api/project-master/options | {"service":"backend","traceId":"trace_1787204512996_xv9vzxn0","method":"GET","path":"/api/project-master/options","phase":"error","durationMs":19218,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-21 09:43:00] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1787276562570_wdhns833","method":"GET","path":"/api/manager-yearly/pipeline-velocity","sqlPreview":"SELECT DATE_FORMAT(start_date, '%Y-%m') AS month_key, DATE_FORMAT(start_date, '%b %Y') AS month_label, SUM(CASE WHEN phase_name = 'G1' THEN 1 ELSE 0 END) AS g1_count, SUM(CASE WHEN phase_name = 'G2' T","paramCount":0,"phase":"error","durationMs":18215,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-21 09:43:00] ERROR: ERROR GET /api/manager-yearly/pipeline-velocity | {"service":"backend","traceId":"trace_1787276562570_wdhns833","method":"GET","path":"/api/manager-yearly/pipeline-velocity","phase":"error","durationMs":18216,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-21 09:43:00] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1787276562087_p2gc3auh","method":"GET","path":"/api/manager-yearly","sqlPreview":"SELECT * FROM t_manager_project_master ORDER BY project_name ASC","paramCount":0,"phase":"error","durationMs":18752,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-21 09:43:00] ERROR: ERROR GET /api/manager-yearly | {"service":"backend","traceId":"trace_1787276562087_p2gc3auh","method":"GET","path":"/api/manager-yearly","phase":"error","durationMs":18753,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-21 09:43:00] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1787276562249_ka04hqrj","method":"GET","path":"/api/manager-site-targets","sqlPreview":"SELECT * FROM t_manager_site_targets","paramCount":0,"phase":"error","durationMs":18613,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-21 09:43:00] ERROR: ERROR GET /api/manager-site-targets | {"service":"backend","traceId":"trace_1787276562249_ka04hqrj","method":"GET","path":"/api/manager-site-targets","phase":"error","durationMs":18614,"errorMessage":"read ECONNRESET","errorName":"Error","code":"ECONNRESET"}
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:216:20)
+[2026-08-21 09:43:01] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1787276578262_hit9bsu3","method":"GET","path":"/api/manager-yearly","sqlPreview":"SELECT * FROM t_manager_project_master ORDER BY project_name ASC","paramCount":0,"phase":"error","durationMs":3105,"errorMessage":"getaddrinfo ENOTFOUND MUADSAPRD.mua.st.com","errorName":"Error","code":"ENOTFOUND"}
+Error: getaddrinfo ENOTFOUND MUADSAPRD.mua.st.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
+[2026-08-21 09:43:01] ERROR: ERROR GET /api/manager-yearly | {"service":"backend","traceId":"trace_1787276578262_hit9bsu3","method":"GET","path":"/api/manager-yearly","phase":"error","durationMs":3106,"errorMessage":"getaddrinfo ENOTFOUND MUADSAPRD.mua.st.com","errorName":"Error","code":"ENOTFOUND"}
+Error: getaddrinfo ENOTFOUND MUADSAPRD.mua.st.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
+[2026-08-21 09:43:01] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1787276578612_0pr5klta","method":"GET","path":"/api/manager-site-targets","sqlPreview":"SELECT * FROM t_manager_site_targets","paramCount":0,"phase":"error","durationMs":2775,"errorMessage":"getaddrinfo ENOTFOUND MUADSAPRD.mua.st.com","errorName":"Error","code":"ENOTFOUND"}
+Error: getaddrinfo ENOTFOUND MUADSAPRD.mua.st.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
+[2026-08-21 09:43:01] ERROR: ERROR GET /api/manager-site-targets | {"service":"backend","traceId":"trace_1787276578612_0pr5klta","method":"GET","path":"/api/manager-site-targets","phase":"error","durationMs":2775,"errorMessage":"getaddrinfo ENOTFOUND MUADSAPRD.mua.st.com","errorName":"Error","code":"ENOTFOUND"}
+Error: getaddrinfo ENOTFOUND MUADSAPRD.mua.st.com
+    at GetAddrInfoReqWrap.onlookupall [as oncomplete] (node:dns:122:26)
+[2026-08-21 09:43:01] ERROR: ERROR bemQueryPromise | {"service":"backend","traceId":"trace_1787276578628_hkfbu7a8","method":"GET","path":"/api/manager-yearly/pipeline-velocity","sqlPreview":"SELECT DATE_FORMAT(start_date, '%Y-%m') AS month_key, DATE_FORMAT(start_date, '%b %Y') AS month_label, SUM(CASE WHEN phase_name = 'G1' THEN 1 ELSE 0 END) AS g1_count, SUM(CASE WHEN phase_name = 'G2' T","paramCount":0,"phase":"error","durationMs":3039,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+[2026-08-21 09:43:01] ERROR: ERROR GET /api/manager-yearly/pipeline-velocity | {"service":"backend","traceId":"trace_1787276578628_hkfbu7a8","method":"GET","path":"/api/manager-yearly/pipeline-velocity","phase":"error","durationMs":3041,"errorMessage":"connect EACCES 10.77.31.33:3361","errorName":"Error","code":"EACCES"}
+Error: connect EACCES 10.77.31.33:3361
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)

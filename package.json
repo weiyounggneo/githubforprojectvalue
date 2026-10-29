@@ -1,0 +1,66 @@
+{
+  "name": "IISPM-Automation-vue",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "start": "concurrently \"cd backend && node server.js\" \"npm run serve\""
+  },
+  "dependencies": {
+    "@databricks/sql": "^2.4.0",
+    "activedirectory2": "^2.2.0",
+    "apexcharts": "^6.6.1",
+    "axios": "^1.11.0",
+    "chart.js": "^4.5.1",
+    "core-js": "^3.8.3",
+    "csv-parse": "^6.1.0",
+    "html2pdf.js": "^0.14.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "jsonwebtoken": "^9.0.3",
+    "jwt-decode": "^4.0.0",
+    "multer": "^2.3.0",
+    "mysql2": "^3.24.3",
+    "uuid": "^14.0.0",
+    "vue": "^3.2.13",
+    "vue-chartjs": "^5.3.4",
+    "vue-columns-resizable": "^0.0.1",
+    "vue-good-table-next": "^0.2.2",
+    "vue-router": "^4.5.1",
+    "vue3-apexcharts": "^1.11.1",
+    "winston": "^3.19.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "concurrently": "^9.2.1",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}

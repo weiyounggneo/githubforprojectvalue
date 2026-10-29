@@ -1,0 +1,15 @@
+import { createApp }  from 'vue'
+import App from './App.vue'
+import './styles/styles.css'
+import router from './router'
+// import VueGoodTablePlugin from 'vue-good-table-next'
+// import 'vue-good-table-next/dist/vue-good-table-next.css'
+import VueColumnsResizable from 'vue-columns-resizable';
+
+
+
+const app = createApp(App);
+app.use(router);
+// app.use(VueGoodTablePlugin);
+app.mount('#app');
+app.use(VueColumnsResizable);
