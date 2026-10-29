@@ -30,7 +30,7 @@
       </div>
 
       <div class="topbar-actions">
-        <button class="pdf-btn" @click="exportPDF" :disabled="isProcessing || isPageLoading || isDatabricksBusy">Export PDF</button>
+        <button class="pdf-btn" @click="exportPDF" :disabled="isProcessing || isPageLoading || isDatabricksBusy || isCombinedBusy">Export PDF</button>
         <button class="home-btn" @click="goHome" :disabled="isProcessing || isPageLoading">Home</button>
         <button class="spotfire-btn" @click="openSpotfire" :disabled="isProcessing || isPageLoading">Spotfire</button>
         <button class="logout-btn" @click="logout" :disabled="isProcessing || isPageLoading">Logout</button>
@@ -138,7 +138,7 @@
           :class="{ active: activeTab === 'grid' }" 
           @click="activeTab = 'grid'"
         >
-          Data Grid
+          On Prem Values
         </button>
         <button 
           class="tab-btn" 
@@ -157,14 +157,22 @@
         <button
           class="tab-btn"
           :class="{ active: activeTab === 'cloud-values' }"
-          :disabled="isProcessing || isPageLoading"
+          :disabled="isProcessing || isPageLoading || isCombinedBusy"
           @click="activeTab = 'cloud-values'"
         >
           Databricks Values
         </button>
+        <button
+          class="tab-btn"
+          :class="{ active: activeTab === 'combined-values' }"
+          :disabled="isProcessing || isPageLoading || isDatabricksBusy"
+          @click="activeTab = 'combined-values'"
+        >
+          Combined Values
+        </button>
       </div>
 
-      <!-- TAB 1: DATA GRID -->
+      <!-- TAB 1: ON PREM VALUES -->
       <div v-show="activeTab === 'grid'">
         <div class="table-section" v-if="goodTableColumns.length > 0">
           <div class="inline-edit-hint">
@@ -430,6 +438,13 @@
         :api-fetch="apiFetch"
         :endpoint="databricksApiBasePath"
         @busy-change="isDatabricksBusy = $event"
+      />
+
+      <combined-project-values
+        v-if="activeTab === 'combined-values'"
+        :api-fetch="apiFetch"
+        :databricks-endpoint="databricksApiBasePath"
+        @busy-change="isCombinedBusy = $event"
       />
 
     </div> <!-- End of PDF Export Wrapper -->
@@ -763,13 +778,15 @@ import * as XLSX from 'xlsx';
 import VueApexCharts from 'vue3-apexcharts';
 import html2pdf from 'html2pdf.js';
 import DatabricksProjectValues from '@/components/DatabricksProjectValues.vue'; 
+import CombinedProjectValues from '@/components/CombinedProjectValues.vue';
 
 export default {
   name: 'ProjectValuePage',
   components: { 
     VueGoodTable,
     apexchart: VueApexCharts,
-    DatabricksProjectValues
+    DatabricksProjectValues,
+    CombinedProjectValues
   },
   
   directives: {
@@ -808,6 +825,7 @@ export default {
 
       isProcessing: false,
       isDatabricksBusy: false,
+      isCombinedBusy: false,
       isPageLoading: false,
       processingMessage: '',
 
@@ -867,10 +885,11 @@ export default {
   computed: {
     activeTabTitle() {
       const titles = {
-        grid: 'Project Value Entry',
+        grid: 'On Prem Values',
         charts: 'Cumulative KPI Analytics',
         'unit-cost': 'Unit Cost Savings',
-        'cloud-values': 'Databricks Values'
+        'cloud-values': 'Databricks Values',
+        'combined-values': 'Combined Values'
       };
       return titles[this.activeTab] || 'Project Value Entry';
     },
@@ -1574,7 +1593,7 @@ export default {
     },
 
     async exportPDF() {
-      if (this.isProcessing || this.isPageLoading || this.isDatabricksBusy) return;
+      if (this.isProcessing || this.isPageLoading || this.isDatabricksBusy || this.isCombinedBusy) return;
       
       this.isProcessing = true;
       this.processingMessage = 'Generating single-page PDF... This may take a few seconds.';
@@ -1586,11 +1605,12 @@ export default {
         const dashboardHeight = element.scrollHeight;
         
         const tabName = {
-          grid: 'DataGrid',
+          grid: 'OnPremValues',
           charts: 'Analytics',
           'unit-cost': 'UnitCostSavings',
-          'cloud-values': 'DatabricksValues'
-        }[this.activeTab] || 'DataGrid';
+          'cloud-values': 'DatabricksValues',
+          'combined-values': 'CombinedValues'
+        }[this.activeTab] || 'OnPremValues';
         
         const opt = {
           margin:       0,
@@ -2677,6 +2697,8 @@ export default {
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
+  min-height: 42px;
+  max-width: 100%;
   transition: all 0.2s ease-in-out;
 }
 
@@ -2689,6 +2711,32 @@ export default {
   color: white;
   border-color: #1f5fa8;
   box-shadow: 0 4px 10px rgba(31, 95, 168, 0.3);
+}
+
+.tab-btn:focus-visible {
+  outline: 3px solid #b77900;
+  outline-offset: 3px;
+}
+
+@media (max-width: 1000px) {
+  .top-bar {
+    height: auto;
+    min-height: 80px;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px 20px;
+  }
+  .top-bar .left { min-width: 0; max-width: 100%; }
+  .topbar-actions { flex-wrap: wrap; gap: 8px; }
+  .top-bar .title { white-space: normal; }
+  .top-bar .home-btn, .top-bar .logout-btn, .top-bar .pdf-btn, .top-bar .spotfire-btn { font-size: .9rem; padding: 8px 12px; min-height: 40px; }
+  .tabs-container { gap: 8px; }
+  .tab-btn { font-size: .9rem; padding: 9px 14px; }
+}
+
+@media (max-width: 480px) {
+  .top-bar .logo { width: 72px; margin: 0 12px 0 0; }
+  .top-bar .title { font-size: 1.1rem; }
 }
 
 /* Charts Container */
