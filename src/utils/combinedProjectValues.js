@@ -1,3 +1,4 @@
+/* global BigInt: readonly */
 // Monthly amounts from the existing read endpoints. No database writes occur here.
 export const COMBINED_METRICS = Object.freeze([
   { field: 'capacity_improvement', label: 'Capacity Improvement', shortLabel: 'Capacity', color: '#2563EB' },
