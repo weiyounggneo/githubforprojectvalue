@@ -20,7 +20,6 @@
 
     <div class="db-status-line">
       <span class="db-status" :class="{ 'db-status-connected': connected && !error && !busy }"><span aria-hidden="true"></span>{{ busy ? loaded ? 'Refreshing table' : 'Connecting to Databricks' : error ? 'Attention needed' : connected ? 'Server connected' : 'Not loaded' }}</span>
-      <span v-if="connected" class="db-identity" :title="databricksUser">Shared account: {{ databricksUser }}</span>
       <span v-if="loaded" class="db-updated">Updated {{ displayTime }}</span>
     </div>
 
@@ -29,7 +28,6 @@
       <summary>Connection details</summary>
       <div class="db-connection-content">
         <dl>
-          <div><dt>Shared Databricks account</dt><dd>{{ databricksUser }}</dd></div>
           <div><dt>Access tokens</dt><dd>Renewed automatically by the server when needed</dd></div>
           <div><dt>Source table</dt><dd>{{ tableName }}</dd></div>
         </dl>
@@ -379,7 +377,6 @@ export default {
 .db-status { display: inline-flex; gap: 7px; align-items: center; border-radius: 20px; padding: 5px 9px; background: #f0f3f7; color: #47576b; font-weight: 600; }
 .db-status > span { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 .db-status-connected { background: #e9f7f1; color: #116149; }
-.db-identity { max-width: 100%; overflow-wrap: anywhere; }
 .db-updated { margin-left: auto; }
 .db-server-note { margin: 10px 0 0; color: #53647a; font-size: .8rem; line-height: 1.5; }
 .db-connection-details { margin-top: 10px; color: #53647a; font-size: .8rem; }

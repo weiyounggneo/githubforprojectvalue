@@ -145,7 +145,7 @@
           :class="{ active: activeTab === 'charts' }" 
           @click="activeTab = 'charts'"
         >
-          Cumulative KPI Analytics
+          On Prem Analytics
         </button>
         <button
           class="tab-btn"
@@ -886,7 +886,7 @@ export default {
     activeTabTitle() {
       const titles = {
         grid: 'On Prem Values',
-        charts: 'Cumulative KPI Analytics',
+        charts: 'On Prem Analytics',
         'unit-cost': 'Unit Cost Savings',
         'cloud-values': 'Databricks Values',
         'combined-values': 'Combined Values'
